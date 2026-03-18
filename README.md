@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# portifolio
-=======
 <p align="center"> 🚧 Em construção 🚧 </p>
 
 <h1 align="center"> Portfólio - Fernando Rufino </h1>

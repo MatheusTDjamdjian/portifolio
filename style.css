@@ -269,24 +269,21 @@ section {
   padding-left: 2px;
 }
 
-.home-presentation #name{
+.home-presentation #name {
   font-weight: 800;
   font-size: 7rem;
-  line-height: 10rem;
-  color: var(--text-color);
-  letter-spacing: -2px;
   line-height: 0.8;
+  color: #C94C16; 
+  letter-spacing: -2px;
 }
 
-.home-presentation #last-name{
-  font-weight: 300;
+.home-presentation #last-name {
+  font-weight: 700; 
   font-size: 6rem;
   line-height: 0.8;
-  font-weight: 300;
   color: var(--text-color);
-  letter-spacing: -2px;
+  letter-spacing: -3px;
   padding-bottom: 1.5rem;
-
 }
 
 .home-presentation h3 p {

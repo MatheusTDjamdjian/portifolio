@@ -24,7 +24,45 @@ item.addEventListener('click', activeLink))
 
 function toggleMode(){
   const html = document.documentElement
-
-  html.classList.toggle('light')
+  const isLight = html.classList.contains('light')
+  
+  if (isLight) {
+    html.classList.remove('light')
+    localStorage.setItem('theme', 'dark')
+    document.querySelector('#switch button').style.left = '0'
+  } else {
+    html.classList.add('light')
+    localStorage.setItem('theme', 'light')
+    document.querySelector('#switch button').style.left = '50%'
+  }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const html = document.documentElement
+  const savedTheme = localStorage.getItem('theme')
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light')
+  
+  if (theme === 'dark') {
+    // :root is default dark, no class needed
+    document.querySelector('#switch button').style.left = '0'
+  } else {
+    html.classList.add('light')
+    document.querySelector('#switch button').style.left = '50%'
+  }
+  
+  // Listen for system changes if no saved theme
+  if (!savedTheme) {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (e.matches) {
+        html.classList.remove('light')
+        document.querySelector('#switch button').style.left = '0'
+      } else {
+        html.classList.add('light')
+        document.querySelector('#switch button').style.left = '50%'
+      }
+    })
+  }
+})
+
 
