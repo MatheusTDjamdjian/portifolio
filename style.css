@@ -523,6 +523,15 @@ img.balls {
 .card img {
   width: 7rem;
   height: 7rem;
+  object-fit: contain;
+}
+
+.ts_logo img {
+  transform: scale(1.2);
+}
+
+.nx_logo img {
+  color: white;
 }
 
 .tools .card img {

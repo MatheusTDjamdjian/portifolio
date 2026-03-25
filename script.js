@@ -66,3 +66,20 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
+let idade = 25
+let temCarteira = true
+
+if(idade >= 18 && temCarteira) {
+  console.log("Pode dirigir")
+}
+if(idade < 18 || !temCarteira) {
+  console.log("Não pode dirigir")
+}
+
+//
+
+let tarefaConcluida = true
+
+if(tarefaConcluida) {
+  console.log("A tarefa está concluída")
+}
