@@ -195,24 +195,24 @@
 
         <div class="about__content reveal" data-delay="150">
           <p class="about__text">
-            Me chamo <strong>Matheus Tasso</strong>, tenho 18 anos e curso Engenharia de Software na <strong>FIAP</strong>. Atualmente integro o time
-            da <strong>Envoy</strong>, empresa de tecnologia situada na Zona Norte de São Paulo, onde desenvolvo aplicações web
-            modernas com React, Next.js, JavaScript e TypeScript, além de trabalhar diariamente com integração
-            e consumo de APIs para entregar soluções escaláveis e performáticas. No dia a dia, utilizo Git para
-            versionamento, aplico práticas de testes automatizados e integração contínua, e busco manter um
-            código limpo, tipado e sustentável. Também atuo em demandas ligadas à área contábil, o que me 
-            proporciona uma visão mais ampla sobre como a tecnologia se conecta a processos reais de negócio 
-            e gera valor estratégico para as empresas.
+            Sou <strong>Matheus Tasso</strong>, tenho 17 anos, estudante de Engenharia de Software na
+            <strong>FIAP</strong> e desenvolvedor focado em tecnologias modernas para web. Atualmente, atuo na empresa
+            de tecnologia <strong>Envoy</strong>, na Zona Norte de São Paulo, onde aplico conhecimentos avançados em
+            React, Next.js, JavaScript, TypeScript e no consumo de APIs para construir aplicações robustas, escaláveis
+            e performáticas. Além disso, utilizo ferramentas essenciais como Git para controle de versões, práticas de
+            testes automatizados e integração contínua para garantir qualidade e eficiência no ciclo de desenvolvimento.
+            Também participo de demandas relacionadas à área contábil, o que me ajuda a compreender a aplicação prática
+            da tecnologia em processos empresariais, ampliando minha visão estratégica.
           </p>
 
           <p class="about__text">
-            Me considero uma pessoa <strong>comunicativa, curiosa e movida a desafios</strong>, com forte interesse em evoluir tanto
-            na parte técnica quanto nas soft skills. Gosto de trabalhar em equipe, discutir arquitetura, resolver
-            problemas complexos e otimizar código sempre que possível. Tenho experiência sólida com design
-            responsivo, desenvolvimento mobile-first, performance web e boas práticas de SEO, sempre alinhado
-            às tendências e padrões do mercado. Apaixonado por tecnologia, jogos e esportes, meu objetivo é 
-            consolidar uma carreira como desenvolvedor <strong>full-stack</strong>, somando dedicação, aprendizado contínuo 
-            e inovação para entregar projetos que realmente façam diferença.
+            Sou uma pessoa <strong>comunicativa, colaborativa e movida por desafios</strong>, com forte interesse em
+            aprimorar minhas competências técnicas e soft skills. Trabalho bem em equipe, focando na resolução de
+            problemas complexos, arquitetura de software e otimização de código. Tenho experiência com design responsivo,
+            desenvolvimento mobile-first, performance web e otimização SEO, sempre buscando entregar soluções alinhadas
+            às melhores práticas do mercado. Apaixonado por tecnologia, jogos e esportes, meu objetivo é consolidar uma
+            carreira como desenvolvedor <strong>full-stack</strong>, unindo dedicação, aprendizado constante e inovação
+            para impactar positivamente os projetos em que atuo.
           </p>
 
           <div class="about__highlights">
@@ -422,7 +422,7 @@
         </article>
 
         <article class="project reveal" data-delay="80">
-          <div class="project__media project__media--contain" style="--bg-media: url('./img/saas-b2b.jpg')">
+          <div class="project__media project__media--contain">
             <img src="./img/saas-b2b.jpg" alt="Tela saas-b2b" loading="lazy">
           </div>
           <div class="project__content">
@@ -437,7 +437,7 @@
         </article>
 
         <article class="project reveal" data-delay="160">
-          <div class="project__media project__media--contain" style="--bg-media: url('./img/investor-analysis.jpg')">
+          <div class="project__media project__media--contain">
             <img src="./img/investor-analysis.jpg" alt="Tela inicial analise de cripto" loading="lazy">
           </div>
           <div class="project__content">
@@ -527,7 +527,7 @@
         </article>
 
         <article class="project reveal" data-delay="160">
-          <div class="project__media project__media--contain" style="--bg-media: url('./img/google-keep.jpg')">
+          <div class="project__media project__media--contain">
             <img src="./img/google-keep.jpg" alt="Página inicial" loading="lazy">
           </div>
           <div class="project__content">
