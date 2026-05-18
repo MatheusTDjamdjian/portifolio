@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +7,14 @@
 
   <link rel="icon" href="./img/icon.png">
 
-  <title>Matheus Tasso · Desenvolvedor Web</title>
+  <title>Matheus Tasso · Web Developer</title>
 
-  <meta name="description" content="Portfólio de Matheus Tasso — Desenvolvedor Web e estudante de Engenharia de Software, focado em React, Next.js, TypeScript e construção de aplicações modernas.">
+  <meta name="description" content="Matheus Tasso portfolio — Web developer and Software Engineering student focused on React, Next.js, TypeScript and modern web applications.">
   <meta name="theme-color" content="#0a0a0f">
 
-  <meta property="og:title" content="Matheus Tasso · Desenvolvedor Web">
-  <meta property="og:site_name" content="Portfólio de Matheus Tasso">
-  <meta property="og:description" content="Desenvolvedor focado em tecnologias modernas para web. Veja alguns dos meus principais projetos.">
+  <meta property="og:title" content="Matheus Tasso · Web Developer">
+  <meta property="og:site_name" content="Matheus Tasso Portfolio">
+  <meta property="og:description" content="Web developer focused on modern web technologies. See some of my main projects.">
   <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,26 +39,30 @@
 
   <!-- navigation -->
   <header class="nav" id="nav">
-    <a href="#home" class="nav__brand" aria-label="Voltar para o início">
+    <a href="#home" class="nav__brand" aria-label="Return to home">
       <span class="nav__brand-mark">MT</span>
       <span class="nav__brand-dot"></span>
     </a>
 
-    <nav class="nav__menu" id="navMenu" aria-label="Navegação principal">
+    <nav class="nav__menu" id="navMenu" aria-label="Main navigation">
       <ul class="nav__list">
-        <li><a href="#home" class="nav__link is-active" data-nav>Início</a></li>
-        <li><a href="#about" class="nav__link" data-nav>Sobre</a></li>
-        <li><a href="#skills" class="nav__link" data-nav>Stack</a></li>
-        <li><a href="#projects" class="nav__link" data-nav>Projetos</a></li>
-        <li><a href="#contact" class="nav__link" data-nav>Contato</a></li>
+        <li><a href="#home" class="nav__link is-active" data-nav data-i18n="navHome">Home</a></li>
+        <li><a href="#about" class="nav__link" data-nav data-i18n="navAbout">About</a></li>
+        <li><a href="#skills" class="nav__link" data-nav data-i18n="navStack">Stack</a></li>
+        <li><a href="#projects" class="nav__link" data-nav data-i18n="navProjects">Projects</a></li>
+        <li><a href="#contact" class="nav__link" data-nav data-i18n="navContact">Contact</a></li>
       </ul>
       <span class="nav__indicator" aria-hidden="true"></span>
     </nav>
 
     <div class="nav__actions">
-      <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro" type="button">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" type="button">
         <i class='bx bx-sun theme-toggle__icon theme-toggle__icon--sun'></i>
         <i class='bx bx-moon theme-toggle__icon theme-toggle__icon--moon'></i>
+      </button>
+
+      <button class="theme-toggle lang-toggle" id="langToggle" aria-label="Switch language" type="button">
+        <i class='bx bx-world'></i>
       </button>
 
       <div class="social social--nav">
@@ -70,7 +74,7 @@
         </a>
       </div>
 
-      <button class="menu-trigger" id="menuTrigger" aria-label="Abrir menu" aria-expanded="false" type="button">
+      <button class="menu-trigger" id="menuTrigger" aria-label="Open menu" aria-expanded="false" type="button">
         <span></span>
         <span></span>
         <span></span>
@@ -85,7 +89,7 @@
         <div class="hero__intro reveal">
           <span class="badge">
             <span class="badge__dot"></span>
-            Disponível para novos projetos
+          <span data-i18n="heroBadge">Available for new projects</span>
           </span>
 
           <h1 class="hero__title">
@@ -93,41 +97,41 @@
             <span class="hero__title-line hero__title-line--accent">Tasso<span class="cursor">_</span></span>
           </h1>
 
-          <p class="hero__role">
+          <p class="hero__role" data-i18n="heroRole">
             <span class="hero__role-tag">&lt;dev&gt;</span>
-            Desenvolvedor Web
+            Web Developer
             <span class="hero__role-divider"></span>
-            Eng. de Software · FIAP
+            Software Engineering · FIAP
             <span class="hero__role-tag">&lt;/dev&gt;</span>
           </p>
 
-          <p class="hero__desc">
-            Construindo experiências web modernas, escaláveis e performáticas com
-            <strong>React</strong>, <strong>Next.js</strong> e <strong>TypeScript</strong>.
+          <p class="hero__desc" data-i18n="heroDesc">
+            Building modern, scalable and high-performance web experiences with
+            <strong>React</strong>, <strong>Next.js</strong> and <strong>TypeScript</strong>.
           </p>
 
           <div class="hero__cta">
             <a href="#projects" class="btn btn--primary">
-              <span>Ver projetos</span>
+              <span data-i18n="heroProjects">View projects</span>
               <i class='bx bx-right-arrow-alt'></i>
             </a>
             <a href="#contact" class="btn btn--ghost">
-              <span>Entrar em contato</span>
+              <span data-i18n="heroContact">Get in touch</span>
             </a>
           </div>
 
           <div class="hero__meta">
             <div class="hero__meta-item">
               <span class="hero__meta-num">3+</span>
-              <span class="hero__meta-label">anos<br>codando</span>
+              <span class="hero__meta-label" data-i18n="heroMetaYears">years<br>coding</span>
             </div>
             <div class="hero__meta-item">
               <span class="hero__meta-num">20+</span>
-              <span class="hero__meta-label">projetos<br>construídos</span>
+              <span class="hero__meta-label" data-i18n="heroMetaProjects">projects<br>built</span>
             </div>
             <div class="hero__meta-item">
               <span class="hero__meta-num">∞</span>
-              <span class="hero__meta-label">vontade<br>de aprender</span>
+              <span class="hero__meta-label" data-i18n="heroMetaLearn">eager<br>to learn</span>
             </div>
           </div>
         </div>
@@ -168,7 +172,7 @@
         </div>
       </div>
 
-      <a href="#about" class="hero__scroll" aria-label="Rolar para a próxima seção">
+      <a href="#about" class="hero__scroll" aria-label="Scroll to next section" data-i18n-attr="heroScrollLabel">
         <span></span>
       </a>
     </section>
@@ -176,15 +180,15 @@
     <!-- about -->
     <section class="about" id="about">
       <div class="section-head reveal">
-        <span class="section-head__num">01 / Sobre</span>
-        <h2 class="section-head__title">Quem é o <span class="text-grad">Matheus</span>?</h2>
-        <p class="section-head__sub">Um pouco da minha história e do que me move como desenvolvedor.</p>
+        <span class="section-head__num" data-i18n="aboutSectionNum">01 / About</span>
+        <h2 class="section-head__title" data-i18n="aboutTitle">Who is <span class="text-grad">Matheus</span>?</h2>
+        <p class="section-head__sub" data-i18n="aboutSubtitle">A bit of my story and what moves me as a developer.</p>
       </div>
 
       <div class="about__grid">
         <div class="about__visual reveal">
           <div class="about__photo">
-            <img src="./img/foto-sobre.jpg" alt="Foto de Matheus Tasso" loading="lazy">
+            <img src="./img/foto-sobre.jpg" alt="Photo of Matheus Tasso" loading="lazy">
             <div class="about__photo-frame"></div>
             <div class="about__photo-tag">
               <i class='bx bx-code-alt'></i>
@@ -194,54 +198,41 @@
         </div>
 
         <div class="about__content reveal" data-delay="150">
-          <p class="about__text">
-            Me chamo <strong>Matheus Tasso</strong>, tenho 18 anos e curso Engenharia de Software na <strong>FIAP</strong>. Atualmente integro o time
-            da <strong>Envoy</strong>, empresa de tecnologia situada na Zona Norte de São Paulo, onde desenvolvo aplicações web
-            modernas com React, Next.js, JavaScript e TypeScript, além de trabalhar diariamente com integração
-            e consumo de APIs para entregar soluções escaláveis e performáticas. No dia a dia, utilizo Git para
-            versionamento, aplico práticas de testes automatizados e integração contínua, e busco manter um
-            código limpo, tipado e sustentável. Também atuo em demandas ligadas à área contábil, o que me 
-            proporciona uma visão mais ampla sobre como a tecnologia se conecta a processos reais de negócio 
-            e gera valor estratégico para as empresas.
+          <p class="about__text" data-i18n="aboutText1">
+            My name is <strong>Matheus Tasso</strong>, I am 18 years old and I study Software Engineering at <strong>FIAP</strong>. I currently work on the team at <strong>Envoy</strong>, a technology company located in São Paulo's North Zone, where I develop modern web applications with React, Next.js, JavaScript and TypeScript, and work daily with API integration and consumption to deliver scalable and high-performance solutions. On a daily basis, I use Git for version control, apply automated testing and continuous integration practices, and strive to keep clean, typed and sustainable code. I also work on accounting-related tasks, which gives me a broader view of how technology connects to real business processes and creates strategic value for companies.
           </p>
 
-          <p class="about__text">
-            Me considero uma pessoa <strong>comunicativa, curiosa e movida a desafios</strong>, com forte interesse em evoluir tanto
-            na parte técnica quanto nas soft skills. Gosto de trabalhar em equipe, discutir arquitetura, resolver
-            problemas complexos e otimizar código sempre que possível. Tenho experiência sólida com design
-            responsivo, desenvolvimento mobile-first, performance web e boas práticas de SEO, sempre alinhado
-            às tendências e padrões do mercado. Apaixonado por tecnologia, jogos e esportes, meu objetivo é 
-            consolidar uma carreira como desenvolvedor <strong>full-stack</strong>, somando dedicação, aprendizado contínuo 
-            e inovação para entregar projetos que realmente façam diferença.
+          <p class="about__text" data-i18n="aboutText2">
+            I consider myself a <strong>communicative, curious and challenge-driven</strong> person, with a strong interest in growing both technical skills and soft skills. I enjoy working in a team, discussing architecture, solving complex problems and optimizing code whenever possible. I have solid experience with responsive design, mobile-first development, web performance and SEO best practices, always aligned with market trends and standards. Passionate about technology, games and sports, my goal is to build a career as a <strong>full-stack developer</strong>, combining dedication, continuous learning and innovation to deliver projects that really make a difference.
           </p>
 
           <div class="about__highlights">
             <div class="chip-info">
               <i class='bx bx-buildings'></i>
               <div>
-                <span class="chip-info__label">Trabalhando na</span>
-                <span class="chip-info__value">Envoy</span>
+                <span class="chip-info__label" data-i18n="aboutHighlightWorkLabel">Working at</span>
+                <span class="chip-info__value" data-i18n="aboutHighlightWorkValue">Envoy</span>
               </div>
             </div>
             <div class="chip-info">
               <i class='bx bx-book-bookmark'></i>
               <div>
-                <span class="chip-info__label">Estudando na</span>
-                <span class="chip-info__value">FIAP</span>
+                <span class="chip-info__label" data-i18n="aboutHighlightStudyLabel">Studying at</span>
+                <span class="chip-info__value" data-i18n="aboutHighlightStudyValue">FIAP</span>
               </div>
             </div>
             <div class="chip-info">
               <i class='bx bx-map'></i>
               <div>
-                <span class="chip-info__label">Localização</span>
-                <span class="chip-info__value">São Paulo, BR</span>
+                <span class="chip-info__label" data-i18n="aboutHighlightLocationLabel">Location</span>
+                <span class="chip-info__value" data-i18n="aboutHighlightLocationValue">São Paulo, BR</span>
               </div>
             </div>
           </div>
 
           <a href="./assets/Matheus_Tasso_Djamdjian_CV.pdf" download="CV-Matheus-Tasso-Djamdjian" class="btn btn--primary btn--cv">
             <i class='bx bx-download'></i>
-            <span>Download do CV</span>
+            <span data-i18n="aboutCv">Download CV</span>
           </a>
         </div>
       </div>
@@ -303,9 +294,9 @@
     <!-- skills -->
     <section class="skills" id="skills">
       <div class="section-head reveal">
-        <span class="section-head__num">02 / Stack</span>
-        <h2 class="section-head__title">Tecnologias que <span class="text-grad">utilizo</span></h2>
-        <p class="section-head__sub">Ferramentas com as quais construo do front ao back.</p>
+        <span class="section-head__num" data-i18n="skillsSectionNum">02 / Stack</span>
+        <h2 class="section-head__title" data-i18n="skillsTitle">Technologies I use</h2>
+        <p class="section-head__sub" data-i18n="skillsSubtitle">Tools I use to build from front to back.</p>
       </div>
 
       <div class="stack">
@@ -313,8 +304,8 @@
           <header class="stack__head">
             <span class="stack__icon"><i class='bx bx-window-alt'></i></span>
             <div>
-              <h3>Front-end</h3>
-              <p>Interfaces modernas, performáticas e responsivas.</p>
+              <h3 data-i18n="skillsFrontHeading">Front-end</h3>
+              <p data-i18n="skillsFrontText">Modern, performant and responsive interfaces.</p>
             </div>
           </header>
           <ul class="stack__grid">
@@ -335,8 +326,8 @@
           <header class="stack__head">
             <span class="stack__icon"><i class='bx bx-server'></i></span>
             <div>
-              <h3>Back-end</h3>
-              <p>APIs, lógica de negócio e dados.</p>
+              <h3 data-i18n="skillsBackHeading">Back-end</h3>
+              <p data-i18n="skillsBackText">APIs, business logic and data.</p>
             </div>
           </header>
           <ul class="stack__grid">
@@ -360,8 +351,8 @@
           <header class="stack__head">
             <span class="stack__icon"><i class='bx bx-wrench'></i></span>
             <div>
-              <h3>Ferramentas</h3>
-              <p>Workflow, design e produtividade.</p>
+              <h3 data-i18n="skillsToolsHeading">Tools</h3>
+              <p data-i18n="skillsToolsText">Workflow, design and productivity.</p>
             </div>
           </header>
           <ul class="stack__grid">
@@ -381,41 +372,41 @@
     <!-- projects -->
     <section class="projects" id="projects">
       <div class="section-head reveal">
-        <span class="section-head__num">03 / Projetos</span>
-        <h2 class="section-head__title">Selecionados <span class="text-grad">recentes</span></h2>
-        <p class="section-head__sub">Projetos pessoais e desafios que ajudaram a moldar minha trajetória.</p>
+        <span class="section-head__num" data-i18n="projectsSectionNum">03 / Projects</span>
+        <h2 class="section-head__title" data-i18n="projectsTitle">Selected <span class="text-grad">recent</span></h2>
+        <p class="section-head__sub" data-i18n="projectsSubtitle">Personal projects and challenges that helped shape my journey.</p>
       </div>
 
       <div class="projects__grid">
 
         <article class="project reveal">
           <div class="project__media project__media--contain" style="--bg-media: url('./img/wisedev.jpg')">
-            <img src="./img/wisedev.jpg" alt="Tela inicial do site" loading="lazy">
+            <img src="./img/wisedev.jpg" alt="Initial site screen" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">HTML · CSS · JavaScript</span>
             <h3 class="project__title">Wisedev</h3>
-            <p class="project__desc"> Uma lading page para um cliente, projetada para apresentar o principal projeto da empresa.</p>
+            <p class="project__desc" data-i18n="projectWisedev">A landing page for a client, designed to showcase the company’s main project.</p>
             <div class="project__links">
-              <a href="https://wisedev.com.br/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
+              <a href="https://wisedev.com.br/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal">
           <div class="project__media project__media--contain" style="--bg-media: url('./img/brazil-data.jpg')">
-            <img src="./img/brazil-data.jpg" alt="Tela principal da brazil-data" loading="lazy">
+            <img src="./img/brazil-data.jpg" alt="Brazil Data main screen" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">NestJS · Next.js · PostgreSQL · MCP</span>
             <h3 class="project__title">Brazil Data</h3>
-            <p class="project__desc">Agente determinístico zero-LLM que consulta dados públicos brasileiros via servidor MCP: CNPJ - CEP - Simples Nacional - Prazos fiscais.</p>
+            <p class="project__desc" data-i18n="projectBrazilData">Zero-LLM deterministic agent that queries Brazilian public data via MCP server: CNPJ - CEP - Simples Nacional - Fiscal deadlines.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/nova-tela-login/" target="_blank" rel="noopener" aria-label="Ver site">
-                <i class='bx bx-link-external'></i><span>Ver site</span>
+              <a href="https://fernandoalvesrufino.github.io/nova-tela-login/" target="_blank" rel="noopener" aria-label="View site">
+                <i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span>
               </a>
-              <a href="https://github.com/MatheusTDjamdjian/brazil-data" target="_blank" rel="noopener" aria-label="Ver código">
-                <i class='bx bxl-github'></i><span>Código</span>
+              <a href="https://github.com/MatheusTDjamdjian/brazil-data" target="_blank" rel="noopener" aria-label="View code">
+                <i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span>
               </a>
             </div>
           </div>
@@ -423,120 +414,120 @@
 
         <article class="project reveal" data-delay="80">
           <div class="project__media project__media--contain" style="--bg-media: url('./img/saas-b2b.jpg')">
-            <img src="./img/saas-b2b.jpg" alt="Tela saas-b2b" loading="lazy">
+            <img src="./img/saas-b2b.jpg" alt="Saas b2b screen" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">Next.js · PostgreSQL · TypeScript · Tailwind</span>
             <h3 class="project__title">Saas b2b</h3>
-            <p class="project__desc">Sistema de gestão SaaS para confeitarias e doceiras de encomenda: Receitas - Encomendas - Custos - Controle.</p>
+            <p class="project__desc" data-i18n="projectSaas">SaaS management system for bakeries and confectioneries: Recipes - Orders - Costs - Control.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/relogio-digital-js/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/saas-b2b" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/relogio-digital-js/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/saas-b2b" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal" data-delay="160">
           <div class="project__media project__media--contain" style="--bg-media: url('./img/investor-analysis.jpg')">
-            <img src="./img/investor-analysis.jpg" alt="Tela inicial analise de cripto" loading="lazy">
+            <img src="./img/investor-analysis.jpg" alt=" crypto analysis screen" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">Next.js · React.js · WebSocket · Binance API</span>
             <h3 class="project__title">Investor Analysis</h3>
-            <p class="project__desc">Dashboard de monitoramento de criptomoedas em tempo real: Preço - Conversão - Variação - Gráfico - Estatística.</p>
+            <p class="project__desc" data-i18n="projectInvestorAnalysis">Real-time cryptocurrency monitoring dashboard: Price - Conversion - Variation - Chart - Statistics.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/form-avaliacao-da-mentoria/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/investor-analysis" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/form-avaliacao-da-mentoria/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/investor-analysis" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal" data-delay="160">
           <div class="project__media">
-            <img src="./img/zip-conversion.jpg" alt="Tela inicial para conversão" loading="lazy">
+            <img src="./img/zip-conversion.jpg" alt="Conversion start screen" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">Python · Flask · HTML/CSS · JavaScript</span>
             <h3 class="project__title">Converter</h3>
-            <p class="project__desc">Ferramenta para conversão de arquivos — imagens, documentos e PDFs — com duas interfaces: uma CLI robusta para automação e uma interface web local com design moderno para uso casual.</p>
+            <p class="project__desc" data-i18n="projectConverter">Tool for file conversion — images, documents and PDFs — with two interfaces: a robust CLI for automation and a modern local web interface for casual use.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/nlw-10-copa-calendario/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/zip-conversion" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/nlw-10-copa-calendario/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/zip-conversion" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal" data-delay="160">
           <div class="project__media">
-            <img src="./img/won-games.jpg" alt="Página principal" loading="lazy">
+            <img src="./img/won-games.jpg" alt="Main page" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">React · GraphQL · TypeScript · Storybook</span>
             <h3 class="project__title">Won Games</h3>
-            <p class="project__desc">Um e-commerce de jogos digitais com foco em performance, tipagem forte e componentes reutilizáveis: Filtros - Autenticação - Fluxo.</p>
+            <p class="project__desc" data-i18n="projectWonGames">A digital games e-commerce focused on performance, strong typing and reusable components: Filters - Authentication - Flow.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/nlw-10-copa-calendario/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/won-games" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/nlw-10-copa-calendario/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/won-games" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal" data-delay="80">
           <div class="project__media">
-            <img src="./img/dev-links.jpg" alt="Tela do cartão de visitas virtual" loading="lazy">
+            <img src="./img/dev-links.jpg" alt="Virtual business card screen" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">HTML · CSS · JavaScript</span>
             <h3 class="project__title">Dev Links</h3>
-            <p class="project__desc">Cartão de visita virtual simples para apresentar um portfólio profissional.</p>
+            <p class="project__desc" data-i18n="projectDevLinks">Simple virtual business card to present a professional portfolio.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/mario-jump-game/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/dev-links" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/mario-jump-game/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/dev-links" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal">
           <div class="project__media">
-            <img src="./img/login-layout.jpg" alt="Página de login" loading="lazy">
+            <img src="./img/login-layout.jpg" alt="Login page" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">HTML · CSS · JavaScript</span>
             <h3 class="project__title">Login Screen</h3>
-            <p class="project__desc">Tela de login responsiva.</p>
+            <p class="project__desc" data-i18n="projectLoginScreen">Responsive login screen.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/devlinks/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/login-layout" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/devlinks/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/login-layout" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal" data-delay="80">
           <div class="project__media">
-            <img src="./img/flappy-bird.jpg" alt="Tela inicial do jogo" loading="lazy">
+            <img src="./img/flappy-bird.jpg" alt="Game start screen" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">HTML · CSS · JavaScript</span>
             <h3 class="project__title">Flappy Bird</h3>
-            <p class="project__desc">Recriação do jogo Flappy Bird, incorporando um menu e outros recursos adicionais.</p>
+            <p class="project__desc" data-i18n="projectFlappyBird">Recreation of the Flappy Bird game, including a menu and additional features.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/homepage-seguranca-ti/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/flappy-bird" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/homepage-seguranca-ti/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/flappy-bird" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
 
         <article class="project reveal" data-delay="160">
           <div class="project__media project__media--contain" style="--bg-media: url('./img/google-keep.jpg')">
-            <img src="./img/google-keep.jpg" alt="Página inicial" loading="lazy">
+            <img src="./img/google-keep.jpg" alt="Home page" loading="lazy">
           </div>
           <div class="project__content">
             <span class="project__tag">HTML · CSS · JavaScript</span>
             <h3 class="project__title">Google Keep</h3>
-            <p class="project__desc">Um projeto com o objetivo de recriar, de forma simplificada, o site do Google.</p>
+            <p class="project__desc" data-i18n="projectGoogleKeep">A project that aims to recreate, in a simplified way, the Google website.</p>
             <div class="project__links">
-              <a href="https://fernandoalvesrufino.github.io/space-cream-page/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span>Ver site</span></a>
-              <a href="https://github.com/MatheusTDjamdjian/google-keep" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span>Código</span></a>
+              <a href="https://fernandoalvesrufino.github.io/space-cream-page/" target="_blank" rel="noopener"><i class='bx bx-link-external'></i><span data-i18n="projectViewSite">View site</span></a>
+              <a href="https://github.com/MatheusTDjamdjian/google-keep" target="_blank" rel="noopener"><i class='bx bxl-github'></i><span data-i18n="projectCode">Code</span></a>
             </div>
           </div>
         </article>
@@ -546,37 +537,37 @@
     <!-- contact -->
     <section class="contact" id="contact">
       <div class="section-head reveal">
-        <span class="section-head__num">04 / Contato</span>
-        <h2 class="section-head__title">Vamos <span class="text-grad">conversar?</span></h2>
-        <p class="section-head__sub">Tenho interesse em novas oportunidades, freelas e projetos colaborativos.</p>
+        <span class="section-head__num" data-i18n="contactSectionNum">04 / Contact</span>
+        <h2 class="section-head__title" data-i18n="contactTitle">Let's <span class="text-grad">talk?</span></h2>
+        <p class="section-head__sub" data-i18n="contactSubtitle">I'm interested in new opportunities, freelance work and collaborative projects.</p>
       </div>
 
       <div class="contact__grid">
         <aside class="contact__info reveal">
           <div class="contact__card">
-            <h3>Fale comigo</h3>
-            <p>Pode mandar uma mensagem por aqui ou pelas minhas redes — costumo responder rápido.</p>
+            <h3 data-i18n="contactCardTitle">Talk to me</h3>
+            <p data-i18n="contactCardText">You can send a message here or through my networks — I usually reply quickly.</p>
 
             <ul class="contact__list">
               <li>
                 <i class='bx bx-envelope'></i>
                 <div>
-                  <span>E-mail</span>
+                  <span data-i18n="contactEmailLabel">Email</span>
                   <a href="mailto:mtassodjam@gmail.com">mtassodjam@gmail.com</a>
                 </div>
               </li>
               <li>
                 <i class='bx bx-map-pin'></i>
                 <div>
-                  <span>Localização</span>
-                  <p>São Paulo, Brasil</p>
+                  <span data-i18n="contactLocationLabel">Location</span>
+                  <p data-i18n="contactLocationValue">São Paulo, Brazil</p>
                 </div>
               </li>
               <li>
                 <i class='bx bx-time-five'></i>
                 <div>
-                  <span>Disponibilidade</span>
-                  <p>Aberto a oportunidades</p>
+                  <span data-i18n="contactAvailabilityLabel">Availability</span>
+                  <p data-i18n="contactAvailabilityValue">Open to opportunities</p>
                 </div>
               </li>
             </ul>
@@ -593,24 +584,24 @@
         <form class="contact__form reveal" data-delay="120" action="https://formsubmit.co/mtassodjam@gmail.com" method="POST">
           <div class="field">
             <input type="text" id="cf-name" name="name" placeholder=" " required>
-            <label for="cf-name">Seu nome</label>
+            <label for="cf-name" data-i18n="contactNameLabel">Your name</label>
           </div>
 
           <div class="field">
             <input type="email" id="cf-email" name="email" placeholder=" " required>
-            <label for="cf-email">Seu melhor e-mail</label>
+            <label for="cf-email" data-i18n="contactEmailFormLabel">Your best email</label>
           </div>
 
           <div class="field">
             <textarea id="cf-msg" name="text" rows="6" placeholder=" " required></textarea>
-            <label for="cf-msg">Como posso te ajudar?</label>
+            <label for="cf-msg" data-i18n="contactMessageLabel">How can I help you?</label>
           </div>
 
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" value="https://silver-shortbread-4377d9.netlify.app/#contact">
 
           <button type="submit" class="btn btn--primary btn--submit">
-            <span>Enviar mensagem</span>
+            <span data-i18n="contactSubmit">Send message</span>
             <i class='bx bx-paper-plane'></i>
           </button>
         </form>
@@ -620,14 +611,14 @@
 
   <footer class="footer">
     <div class="footer__inner">
-      <p class="footer__copy">
-        Feito por <strong>Matheus Tasso</strong>
+      <p class="footer__copy" data-i18n="footerCopy">
+        Made by <strong>Matheus Tasso</strong>
         <img src="./img/bussola.svg" alt="" aria-hidden="true">
-        <span>· Todos os direitos reservados</span>
+        <span>· All rights reserved</span>
       </p>
       <p class="footer__year">&copy; <span id="year">2026</span></p>
     </div>
-    <a href="#home" class="back-to-top" aria-label="Voltar para o topo">
+    <a href="#home" class="back-to-top" aria-label="Back to top" data-i18n-attr="backToTopLabel">
       <i class='bx bx-up-arrow-alt'></i>
     </a>
   </footer>
